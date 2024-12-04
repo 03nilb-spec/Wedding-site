@@ -1,0 +1,81 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    background-color: #006400;
+    background-image: url('back.webp'); /* Add your image path here */
+    background-size: cover; /* This makes the image cover the entire page */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Fixes the background image so it stays in place while scrolling */
+    color: #72b7ed;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 20px 0;
+    color: #2C3E50;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000000;
+    color: #F5F5DC;
+    margin-top: 20px;
+}
+
+/* Save the Date Section */
+.save-the-date {
+    background-color: #2C3E50;
+    color: #F5F5DC;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex; /* For positioning designs */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Image on the left and right */
+.save-the-date .design {
+    width: 100px;  /* Increased the size */
+    height: auto;
+    max-width: 150px;  /* Optional: Adds a max width limit */
+    margin: 0 20px;  /* Adds spacing between text and images */
+}
+
+/* Countdown Timer Styles */
+.countdown {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* Gallery Styles */
+.gallery {
+    display: block; /* Stack images vertically */
+    padding: 20px;
+}
+
+.gallery img {
+    display: block; /* Ensures the image behaves like a block element */
+    margin-left: auto;  /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    width: 70%;         /* Sets the image width to 70% of the container */
+    height: auto;       /* Maintains aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
