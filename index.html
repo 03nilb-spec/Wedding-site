@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1280" /> <!-- Fix viewport width to desktop size -->
+    <meta name="description" content="Rushiraj and Bageshri's Wedding Ceremony">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rushiraj & Bageshri's Wedding Gallery</title>
     <style>
         /* General Styles */
@@ -116,6 +118,16 @@
             width: 80%;
             height: 20%;
             border-radius: 10px;
+        }
+
+        /* Ensure Desktop View */
+        @media only screen and (max-width: 768px) {
+            body {
+                font-size: 18px;
+            }
+            .container {
+                width: 100%;
+            }
         }
     </style>
 </head>
