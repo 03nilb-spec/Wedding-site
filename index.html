@@ -53,6 +53,19 @@
             margin-top: 10px;
         }
 
+/* Button Styles */
+.location-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 2.0rem;
+    background-color: #000000;
+    color: #ddcece;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
         /* Gallery Styles */
         .gallery {
             display: grid;
@@ -135,14 +148,14 @@
     <div class="logo-section">
         <img src="images/logo.jpg" alt="विवाह लोगो">
         <div class="marathi-text">
-            प्रेमाच्या या पवित्र क्षणांचे साक्षीदार होण्यासाठी, आमच्या मंगल सोहळ्यात आपले हार्दिक स्वागत आहे! ❤️✨
+            पवित्र क्षणांचे साक्षीदार होण्यासाठी, आमच्या मंगल सोहळ्यात आपले हार्दिक स्वागत आहे! ❤️✨
         </div>
     </div>
 
     <!-- Video Section -->
     <div class="video-container">
-        <video autoplay muted loop>
-            <source src="images/vid.mp4" type="video/mp4">
+        <video autoplay loop>
+            <source src="images/vid1.mp4" type="video/mp4">
             तुमचा ब्राउझर व्हिडिओ टॅगला सपोर्ट करत नाही.
         </video>
     </div>
@@ -154,7 +167,7 @@
     </audio>
 
     <!-- Play Button (if autoplay fails) -->
-    <button onclick="document.getElementById('backgroundAudio').play()">Play Audio</button>
+    <!-- <button onclick="document.getElementById('backgroundAudio').play()">Play Audio</button> -->
 
     <!-- Photo Gallery -->
     <div class="gallery">
@@ -180,7 +193,12 @@
             <p>यांचा</p>
             <p>विवाहसोहळा </p>
             <p><strong>कार्यक्रम तारीख:</strong> २२ डिसेंबर, २०२४</p>
-            <div id="countdown" class="countdown"></div>
+            <div id="countdown" class="countdown"></div> 
+                <p> स्थळ :- साखरे मंगल कार्यालय </p>
+            <!-- Location Button -->
+            <a href="https://www.google.com/maps/place/Sakhare+Mangal+Karyalay/@19.893563,75.351287,17z/data=!3m1!4b1!4m6!3m5!1s0x3bdba2badece3bab:0x991eaf8a4d19a91a!8m2!3d19.893563!4d75.3538619!16s%2Fg%2F1260tplw9?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                <button class="location-button">Click here to view location</button>
+            </a>
         </div>
     </div>
 
