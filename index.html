@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1280" /> <!-- Fix viewport width to desktop size -->
-    <meta name="description" content="Rushiraj and Bageshri's Wedding Ceremony">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Optimized for all devices -->
+    <meta name="description" content="ऋषीराज आणि बागेश्री यांचा शुभ विवाहसोहळा">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rushiraj & Bageshri's Wedding Gallery</title>
+    <title>ऋषीराज आणि बागेश्री यांचा विवाहसोहळा</title>
     <style>
         /* General Styles */
         body, html {
             margin: 0;
             padding: 0;
-            font-family: 'Dancing Script', cursive;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
             background-color: #000000;
             color: #72b7ed;
         }
@@ -37,23 +37,17 @@
             margin: 20px 0;
             border-radius: 10px;
             text-align: center;
-            font-size: 2.8rem;
+            font-size: 3.8rem;
             font-weight: bold;
-            display: flex; /* For positioning designs */
-            flex-direction: column; /* Stack the content vertically */
-            justify-content: center; /* Center the content vertically */
-            align-items: center; /* Center the content horizontally */
-        }
-
-        /* Image on the left and right */
-        .save-the-date .design {
-            width: 50px;  /* Adjust the size of your images */
-            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Countdown Timer Styles */
         .countdown {
-            font-size: 2rem;
+            font-size: 5.5rem;
             color: #FFFFFF;
             font-weight: bold;
             margin-top: 10px;
@@ -101,8 +95,8 @@
 
         .marathi-text {
             color: #F5F5DC;
-            font-family: 'Baloo Bhaijaan 2', sans-serif; /* Change to your desired font */
-            font-size: 1.2rem;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            font-size: 2.2rem;
             line-height: 1.8;
             max-width: 400px;
         }
@@ -116,31 +110,32 @@
 
         .video-container video {
             width: 80%;
-            height: 20%;
             border-radius: 10px;
         }
 
-        /* Ensure Desktop View */
+        /* Responsive Design */
         @media only screen and (max-width: 768px) {
-            body {
-                font-size: 18px;
+            h1 {
+                font-size: 2.5rem;
             }
-            .container {
-                width: 100%;
+            .save-the-date {
+                font-size: 2rem;
+            }
+            .countdown {
+                font-size: 3rem;
             }
         }
     </style>
 </head>
 <body>
     <!-- Page Title -->
-    <h1>Rushiraj and Bageshri's Wedding Ceremony</h1>
+    <h1>ऋषीराज आणि बागेश्री यांचा विवाहसोहळा</h1>
 
     <!-- Logo Section -->
     <div class="logo-section">
-        <img src="images/logo.jpg" alt="Wedding Logo">
+        <img src="images/logo.jpg" alt="विवाह लोगो">
         <div class="marathi-text">
-            प्रेमाने विणलेली नाती, विश्वासाने बांधलेले धागे आणि आनंदाने सजवलेली स्वप्नं... हे सारे साजरे करण्याचा हा शुभ दिवस! अत्यंत हर्षोल्लासाने तुम्हाला आमच्या लग्नाच्या मंगल सोहळ्यास उपस्थित राहण्याचे आग्रहाचे निमंत्रण देतो. 
-            तुमच्या शुभाशीर्वादांनी आणि उपस्थितीने आमचे जीवन मंगलमय व्हावे, हीच इच्छा! तुमची साथ आणि सदिच्छा आमच्यासाठी अमूल्य आहे. चला, या सुंदर दिवसाचे साक्षीदार होऊ आणि आनंदाचा सागर निर्माण करू!
+            प्रेमाच्या या पवित्र क्षणांचे साक्षीदार होण्यासाठी, आमच्या मंगल सोहळ्यात आपले हार्दिक स्वागत आहे! ❤️✨
         </div>
     </div>
 
@@ -148,36 +143,43 @@
     <div class="video-container">
         <video autoplay muted loop>
             <source src="images/vid.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            तुमचा ब्राउझर व्हिडिओ टॅगला सपोर्ट करत नाही.
         </video>
     </div>
 
+    <!-- Audio Section -->
+    <audio id="backgroundAudio" autoplay loop>
+        <source src="audio/audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
     <!-- Photo Gallery -->
     <div class="gallery">
-        <img src="images/1.jpg" alt="Wedding Photo 1">
-        <img src="images/2.jpg" alt="Wedding Photo 2">
+        <img src="images/1.jpg" alt="विवाह फोटो १">
+        <img src="images/2.jpg" alt="विवाह फोटो २">
     </div>
 
     <div class="gallery">
-        <img src="images/3.jpg" alt="Wedding Photo 3">
-        <img src="images/7.jpg" alt="Wedding Photo 4">
+        <img src="images/3.jpg" alt="विवाह फोटो ३">
+        <img src="images/7.jpg" alt="विवाह फोटो ४">
     </div>
 
     <div class="gallery">
-        <img src="images/5.jpg" alt="Wedding Photo 5">
-        <img src="images/6.jpg" alt="Wedding Photo 6">
+        <img src="images/5.jpg" alt="विवाह फोटो ५">
+        <img src="images/6.jpg" alt="विवाह फोटो ६">
     </div>
 
-  <!-- Save the Date Section with Countdown -->
-  <div class="save-the-date">
-      <!-- Text in the center -->
-      <div class="text">
-          <p>Save the Date!</p>
-          <p>Rushiraj & Bageshri's Wedding</p>
-          <p><strong>Event Date:</strong> December 22, 2024</p>
-          <div id="countdown" class="countdown"></div>
-      </div>
-  </div>
+    <!-- Save the Date Section with Countdown -->
+    <div class="save-the-date">
+        <div class="text">
+            <p>मंगलमय सोहळ्याच्या साक्षीदार व्हा !</p>
+            <p>ऋषीराज आणि बागेश्री</p>
+            <p>यांचा</p>
+            <p>विवाहसोहळा </p>
+            <p><strong>कार्यक्रम तारीख:</strong> २२ डिसेंबर, २०२४</p>
+            <div id="countdown" class="countdown"></div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -196,11 +198,11 @@
             const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            document.getElementById("countdown").innerHTML = `${days}D ${hours}H ${minutes}M ${seconds}S`;
 
             if (timeRemaining < 0) {
                 clearInterval(countdownFunction);
-                document.getElementById("countdown").innerHTML = "The wedding has arrived!";
+                document.getElementById("countdown").innerHTML = "विवाह चालू आहे!";
             }
         }, 1000);
     </script>
