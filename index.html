@@ -149,9 +149,12 @@
 
     <!-- Audio Section -->
     <audio id="backgroundAudio" autoplay loop>
-        <source src="audio/audio.mp3" type="audio/mp3">
+        <source src="audio/audio.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+
+    <!-- Play Button (if autoplay fails) -->
+    <button onclick="document.getElementById('backgroundAudio').play()">Play Audio</button>
 
     <!-- Photo Gallery -->
     <div class="gallery">
